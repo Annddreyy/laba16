@@ -14,7 +14,7 @@ public class Main {
                 sb.append(Character.toChars(code));
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         }
 
         text = sb.toString();
@@ -42,7 +42,7 @@ public class Main {
                 fw.write(text.charAt(i));
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         }
         //System.out.println(text);
     }
